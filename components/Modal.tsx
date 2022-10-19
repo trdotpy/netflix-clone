@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react'
 import MuiModal from '@mui/material/Modal'
 import { useRecoilState, useRecoilValue } from 'recoil'
 import { modalState, movieState } from '../modal/modalAtom'
-import { Genre, Movie } from '../typings'
+import { Element, Genre, Movie } from '../typings'
 import ReactPlayer from 'react-player/lazy'
-
 
 function Modal() {
   const [showModal, setShowModal] = useRecoilState(modalState)
@@ -20,6 +19,7 @@ function Modal() {
 
   useEffect(() => {
     if (!movie) return
+
     async function fetchMovie() {
       const data = await fetch(
         `https://api.themoviedb.org/3/${
