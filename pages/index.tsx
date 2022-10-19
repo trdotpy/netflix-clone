@@ -3,7 +3,7 @@ import { useRecoilValue } from 'recoil'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
 import Row from '../components/Row'
-import { modalState, movieState } from '../modal/modalAtom'
+import { modalState, movieState } from '../atoms/modalAtom'
 import { Movie } from '../typings'
 import requests from './api/requests'
 import Modal from '../components/Modal'
@@ -74,7 +74,6 @@ export const getServerSideProps = async () => {
     horrorMovies,
     romanceMovies,
     documentaries,
-		
   ] = await Promise.all([
     fetch(requests.fetchNetflixOriginals).then((res) => res.json()),
     fetch(requests.fetchTrending).then((res) => res.json()),

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import MuiModal from '@mui/material/Modal'
 import { useRecoilState, useRecoilValue } from 'recoil'
-import { modalState, movieState } from '../modal/modalAtom'
+import { modalState, movieState } from '../atoms/modalAtom'
 import { Element, Genre, Movie } from '../typings'
 import ReactPlayer from 'react-player/lazy'
 
