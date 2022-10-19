@@ -5,7 +5,7 @@ Netflix Clone 🍿
   <br>
 </h1>
 
-<img src="./public/netflix-clone-ss-2.png">
+<img src="./public/netflix-clone-ss.png">
 
 <p align="center">
   <a href="#technology-used">Technology</a> |
