@@ -1,27 +1,53 @@
-# Next.js + Tailwind CSS Example
+<h1 align="center">
+  <br>
+  <br>
+Netflix Clone 🍿
+  <br>
+</h1>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+<img src="./public/netflix-clone-ss-2.png">
 
-## Deploy your own
+<p align="center">
+  <a href="#technology-used">Technology</a> |
+  <a href="">Live Demo</a> |
+  <a href="#contact">Contact</a> |
+</p>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+# Technology
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+This project was made with the following open source packages:
 
-## How to use
+- Next.js
+- TypeScript
+- TailwindCSS
+- MaterialUI
+- TMBD API
+- Heroicons
+- React-Icons
+- React-Player
+- Recoil
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+# How To Use
+
+### With Git:
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+# Clone this repository
+$ git clone https://github.com/trdotpy/netflix-clone
+
+# Go into the repository
+$ cd netflix-clone
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm run dev
 ```
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+# Contact
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+[Github](https://github.com/trdotpy/) |
+[Email](mailto:tanvi.rahman@outlook.com)
