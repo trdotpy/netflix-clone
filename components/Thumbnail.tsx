@@ -4,7 +4,7 @@ import { modalState, movieState } from '../modal/modalAtom'
 import { Movie } from '../typings'
 
 interface Props {
-  movie: Movie | DocumentData
+  movie: Movie
 }
 
 function Thumbnail({ movie }: Props) {
