@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-
 import Image from 'next/image'
 import BasicMenu from './BasicMenu'
 import { BellIcon, SearchIcon } from '@heroicons/react/solid'
