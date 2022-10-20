@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import Row from '../components/Row'
 import { modalState, movieState } from '../atoms/modalAtom'
 import { Movie } from '../typings'
-import requests from './api/requests'
+import requests from '../utilities/requests'
 import Modal from '../components/Modal'
 
 interface Props {
