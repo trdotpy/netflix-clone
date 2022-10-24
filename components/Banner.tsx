@@ -32,15 +32,15 @@ function Banner({ netflixOriginals }: Props) {
         />
       </div>
 
-      <h1 className="text-3xl font-bold md:text-5xl lg:text-6xl text-shadow-lg">
+      <h1 className="text-3xl font-bold text-shadow-lg md:text-5xl lg:text-6xl">
         {movie?.title || movie?.name || movie?.original_name}
       </h1>
-      <p className="max-w-md text-xs text-shadow-lg md:max-w-md md:text-lg lg:max-w-2xl lg:text-md flex flex-wrap max-h-min">
+      <p className="lg:text-md flex max-h-min max-w-md flex-wrap text-xs text-shadow-lg md:max-w-md md:text-lg lg:max-w-2xl">
         {movie?.overview}
       </p>
       <div className="flex space-x-3">
         <button
-          className="flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl bg-white text-black"
+          className="flex items-center gap-x-2 rounded bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl"
           onClick={() => {
             setCurrentMovie(movie)
             setShowModal(true)
@@ -50,7 +50,7 @@ function Banner({ netflixOriginals }: Props) {
           Play
         </button>
         <button
-          className="flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl bg-[gray]/70"
+          className="flex items-center gap-x-2 rounded bg-[gray]/70 px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl"
           onClick={() => {
             setCurrentMovie(movie)
             setShowModal(true)

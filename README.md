@@ -9,7 +9,7 @@ Netflix Clone 🍿
 
 <p align="center">
   <a href="#technology-used">Technology</a> |
-  <a href="">Live Demo</a> |
+  <a href="https://netflix-clone-mauve-three.vercel.app/">Live Demo</a> |
   <a href="#contact">Contact</a> |
 </p>
 
