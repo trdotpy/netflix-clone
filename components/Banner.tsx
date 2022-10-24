@@ -40,7 +40,7 @@ function Banner({ netflixOriginals }: Props) {
       </p>
       <div className="flex space-x-3">
         <button
-          className="flex items-center gap-x-2 rounded bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl"
+          className="flex items-center gap-x-2 rounded bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:py-2.5 md:px-8 md:text-lg"
           onClick={() => {
             setCurrentMovie(movie)
             setShowModal(true)
@@ -49,8 +49,9 @@ function Banner({ netflixOriginals }: Props) {
           <FaPlay className="h-4 w-4 text-black md:h-7 md:w-7" />
           Play
         </button>
+
         <button
-          className="flex items-center gap-x-2 rounded bg-[gray]/70 px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl"
+          className="flex items-center gap-x-2 rounded bg-[gray]/70 px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-lg"
           onClick={() => {
             setCurrentMovie(movie)
             setShowModal(true)
