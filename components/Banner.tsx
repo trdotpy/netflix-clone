@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { baseUrl } from '../constants/movie'
-import { Movie } from '../typings'
+import { Movie } from '../types'
 import { FaPlay } from 'react-icons/fa'
 import { InformationCircleIcon } from '@heroicons/react/solid'
 import { useRecoilState } from 'recoil'
@@ -32,7 +32,7 @@ function Banner({ netflixOriginals }: Props) {
         />
       </div>
 
-      <h1 className="text-xl font-bold md:text-4xl lg:text-5xl text-shadow-lg">
+      <h1 className="text-3xl font-bold md:text-5xl lg:text-6xl text-shadow-lg">
         {movie?.title || movie?.name || movie?.original_name}
       </h1>
       <p className="max-w-md text-xs text-shadow-lg md:max-w-md md:text-lg lg:max-w-2xl lg:text-md flex flex-wrap max-h-min">

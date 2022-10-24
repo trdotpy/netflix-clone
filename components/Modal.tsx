@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import MuiModal from '@mui/material/Modal'
 import { useRecoilState, useRecoilValue } from 'recoil'
 import { modalState, movieState } from '../atoms/modalAtom'
-import { Element, Genre, Movie } from '../typings'
+import { Element, Genre, Movie } from '../types'
 import ReactPlayer from 'react-player/lazy'
 
 function Modal() {
@@ -10,12 +10,7 @@ function Modal() {
   const [movie, setMovie] = useRecoilState(movieState)
   const [trailer, setTrailer] = useState('')
   const [genres, setGenres] = useState<Genre[]>([])
-  const [movies, setMovies] = useState<Movie[]>([])
-
-  const handleClose = () => {
-    setShowModal(false)
-    setMovie(null)
-  }
+  // const [movies, setMovies] = useState<Movie[]>([])
 
   useEffect(() => {
     if (!movie) return
@@ -41,6 +36,10 @@ function Modal() {
     fetchMovie()
   }, [movie])
 
+  const handleClose = () => {
+    setShowModal(false)
+    setMovie(null)
+  }
   return (
     <MuiModal
       className="fixed !top-7 left-0 right-0 z-50 mx-auto w-full max-w-5xl overflow-hidden overflow-y-scroll rounded-md scrollbar-hide"
@@ -82,7 +81,7 @@ function Modal() {
               <div className="flex flex-col space-y-3 text-sm">
                 <div>
                   <span className="text-[gray]">Genres:</span>{' '}
-                  {genres?.map((genre) => genre.name).join(', ')}
+                  {genres && genres?.map((genre) => genre.name).join(', ')}
                 </div>
                 <div>
                   <span className="text-[gray]">Original language:</span>{' '}

@@ -4,7 +4,7 @@ import Banner from '../components/Banner'
 import Header from '../components/Header'
 import Row from '../components/Row'
 import { modalState, movieState } from '../atoms/modalAtom'
-import { Movie } from '../typings'
+import { Movie } from '../types'
 import requests from '../utilities/requests'
 import Modal from '../components/Modal'
 
@@ -30,7 +30,7 @@ const Home = ({
   trendingNow,
 }: Props) => {
   const showModal = useRecoilValue(modalState)
-	
+
   return (
     <div
       className={`relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh] ${

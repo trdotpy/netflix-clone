@@ -35,17 +35,17 @@ function Header() {
           className="object-contain cursor-pointer"
         />
 
-        <ul className="hidden space-x-4 md:flex">
-          <li className="cursor-pointer text-sm font-semibold text-[#e5e5e5] transition duration-[.4s]  hover:text-white">
+        <ul className="hidden space-x-8 md:flex">
+          <li className="cursor-pointer text-md font-semibold text-[#e5e5e5] transition duration-[.4s]  hover:text-white">
             Home
           </li>
-          <li className="cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3]">
+          <li className="cursor-pointer text-md font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3]">
             TV Shows
           </li>
-          <li className="cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3]">
+          <li className="cursor-pointer text-md font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3]">
             Movies & Films
           </li>
-          <li className="cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3]">
+          <li className="cursor-pointer text-md font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3]">
             New & Popular
           </li>
         </ul>
