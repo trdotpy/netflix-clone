@@ -17,10 +17,11 @@ Netflix Clone 🍿
 
 This project was made with the following open source packages:
 
-- Next.js
-- TypeScript
-- TailwindCSS
-- MaterialUI
+<img src='https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white'/> <img src='https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white'/>
+<img src='https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white'/>
+<img src='https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white'/>
+<img src='https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white'/>
+
 - TMBD API
 - Heroicons
 - React-Icons
@@ -49,5 +50,5 @@ $ npm run dev
 
 # Contact
 
-[Github](https://github.com/trdotpy/) |
-[Email](mailto:tanvi.rahman@outlook.com)
+[<img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white'>](https://github.com/trdotpy/)
+[<img src='https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white'>](mailto:tanvi.rahman@outlook.com)
