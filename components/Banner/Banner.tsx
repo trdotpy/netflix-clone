@@ -33,10 +33,10 @@ function Banner({ netflixOriginals }: Props) {
         />
       </div>
 
-      <h1 className="text-5xl font-bold text-shadow-xl md:text-5xl lg:text-7xl">
+      <h1 className="text-4xl font-bold text-shadow-xl md:text-6xl">
         {movie?.title || movie?.name || movie?.original_name}
       </h1>
-      <p className="max-h-xl text-md flex max-w-xl flex-wrap text-shadow-xl md:max-w-2xl md:text-xl lg:max-w-3xl">
+      <p className="max-h-xl text-md flex max-w-xl flex-wrap text-shadow-xl md:max-w-2xl md:text-lg lg:max-w-3xl">
         {movie?.overview}
       </p>
       <div className="flex space-x-3">
