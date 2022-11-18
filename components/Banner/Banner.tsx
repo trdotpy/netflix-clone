@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { baseUrl } from '../constants/movie'
-import { Movie } from '../types'
+import { baseUrl } from '../../constants/movie'
+import { Movie } from '../../types'
 import { FaPlay } from 'react-icons/fa'
-import { InformationCircleIcon } from '@heroicons/react/solid'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow'
+import InfoIcon from '@mui/icons-material/Info'
 import { useRecoilState } from 'recoil'
-import { modalState, movieState } from '../atoms/modalAtom'
+import { modalState, movieState } from '../../atoms/modalAtom'
 
 interface Props {
   netflixOriginals: Movie[]
@@ -23,7 +24,7 @@ function Banner({ netflixOriginals }: Props) {
   }, [netflixOriginals])
 
   return (
-    <div className="flex flex-col space-y-2 py-28 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12">
+    <div className="flex flex-col space-y-4 py-28  lg:h-[65vh] lg:justify-end lg:pb-28">
       <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
         <Image
           layout="fill"
@@ -32,10 +33,10 @@ function Banner({ netflixOriginals }: Props) {
         />
       </div>
 
-      <h1 className="text-3xl font-bold text-shadow-lg md:text-5xl lg:text-6xl">
+      <h1 className="text-5xl font-bold text-shadow-xl md:text-5xl lg:text-7xl">
         {movie?.title || movie?.name || movie?.original_name}
       </h1>
-      <p className="lg:text-md flex max-h-min max-w-md flex-wrap text-xs text-shadow-lg md:max-w-md md:text-lg lg:max-w-2xl">
+      <p className="max-h-xl text-md flex max-w-xl flex-wrap text-shadow-xl md:max-w-2xl md:text-xl lg:max-w-3xl">
         {movie?.overview}
       </p>
       <div className="flex space-x-3">
@@ -46,7 +47,7 @@ function Banner({ netflixOriginals }: Props) {
             setShowModal(true)
           }}
         >
-          <FaPlay className="h-4 w-4 text-black md:h-7 md:w-7" />
+          <PlayArrowIcon className="text-black" />
           Play
         </button>
 
@@ -57,7 +58,8 @@ function Banner({ netflixOriginals }: Props) {
             setShowModal(true)
           }}
         >
-          <InformationCircleIcon className="h-5 w-5 md:h-8 md:w-8" /> More Info
+          <InfoIcon className="h-5 w-5 md:h-8 md:w-8" />{' '}
+          <span>Watch Trailer</span>
         </button>
       </div>
     </div>

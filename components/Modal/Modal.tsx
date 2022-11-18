@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import MuiModal from '@mui/material/Modal'
 import { useRecoilState, useRecoilValue } from 'recoil'
-import { modalState, movieState } from '../atoms/modalAtom'
-import { Element, Genre, Movie } from '../types'
+import { modalState, movieState } from '../../atoms/modalAtom'
+import { Element, Genre, Movie } from '../../types'
 import ReactPlayer from 'react-player/lazy'
 
 function Modal() {
@@ -62,13 +62,13 @@ function Modal() {
           </div>
         </div>
 
-        <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8">
+        {/* <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8">
           <div className="space-y-3 text-lg">
             <div className="flex items-center space-x-2 text-sm">
-              <p className="font-semibold text-lg text-green-400">
+              <p className="text-lg font-semibold text-green-400">
                 {movie!.vote_average * 10}% Match
               </p>
-              <p className="font-light text-md">
+              <p className="text-md font-light">
                 {movie?.release_date || movie?.first_air_date}
               </p>
               <div className="flex h-4 items-center justify-center rounded border border-white/40 px-1.5 text-xs">
@@ -76,7 +76,7 @@ function Modal() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-x-10 gap-y-4 font-light md:flex-row text-sm">
+            <div className="flex flex-col gap-x-10 gap-y-4 text-sm font-light md:flex-row">
               <p className="w-5/6">{movie?.overview}</p>
               <div className="flex flex-col space-y-3 text-sm">
                 <div>
@@ -90,7 +90,7 @@ function Modal() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </>
     </MuiModal>
   )

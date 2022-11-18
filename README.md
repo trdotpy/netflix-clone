@@ -32,7 +32,6 @@ This application pulls movie data from the TheMovieDatabase (TMDB) API.
 
 ![React-Icons](https://img.shields.io/static/v1?style=for-the-badge&message=React-Icons&color=blue&logo=React&logoColor=white&label=) ![React-Player](https://img.shields.io/static/v1?style=for-the-badge&message=React-Player&color=blue&logo=React&logoColor=white&label=)
 
-![HeroIcons](https://img.shields.io/static/v1?style=for-the-badge&message=Heroicons&color=purple&logo=&logoColor=white&label=)
 ![Recoil JS](https://img.shields.io/static/v1?style=for-the-badge&message=Recoil+JS&color=black&logo=Recoil.JS&logoColor=white&label=)
 
 ## Install

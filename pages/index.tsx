@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { useRecoilValue } from 'recoil'
-import Banner from '../components/Banner'
-import Header from '../components/Header'
-import Row from '../components/Row'
+import Banner from '../components/Banner/Banner'
+import Header from '../components/Header/Header'
+import Row from '../components/Row/Row'
 import { modalState, movieState } from '../atoms/modalAtom'
 import { Movie } from '../types'
 import requests from '../utilities/requests'
-import Modal from '../components/Modal'
+import Modal from '../components/Modal/Modal'
 
 interface Props {
   netflixOriginals: Movie[]
@@ -38,25 +38,25 @@ const Home = ({
       }`}
     >
       <Head>
-        <title>Netflix</title>
+        <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Header />
-
-      <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
-        <Banner netflixOriginals={netflixOriginals} />
-        <section className="md:space-y-20">
-          <Row title="Horror" movies={horrorMovies} />
-          <Row title="Trending" movies={trendingNow} />
-          <Row title="Top Rated" movies={topRated} />
-          <Row title="Action" movies={actionMovies} />
-          <Row title="Comedies" movies={comedyMovies} />
-          <Row title="Romance" movies={romanceMovies} />
-          <Row title="Documentaries" movies={documentaries} />
-        </section>
-      </main>
-      {showModal && <Modal />}
+      <>
+        <Header />
+        <div className="relative pl-8 lg:space-y-0">
+          <Banner netflixOriginals={netflixOriginals} />
+          <div className="md:space-y-52">
+            <Row title="Trending" movies={trendingNow} />
+            <Row title="Romance" movies={romanceMovies} />
+            <Row title="Comedies" movies={comedyMovies} />
+            <Row title="Documentaries" movies={documentaries} />
+            <Row title="Top Rated" movies={topRated} />
+            <Row title="Action" movies={actionMovies} />
+            <Row title="Horror" movies={horrorMovies} />
+          </div>
+        </div>
+        {showModal && <Modal />}
+      </>
     </div>
   )
 }
