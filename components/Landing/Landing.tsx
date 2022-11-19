@@ -14,7 +14,7 @@ export default function Landing() {
           className="z-20 w-28 cursor-pointer object-contain md:w-44"
         />
         <Link href="/login">
-          <button className="text-md rounded-md bg-[#E50914] px-5 py-2 text-white md:mb-4 md:mr-5">
+          <button className="text-md rounded-sm bg-[#E50914] px-5 py-2 text-white md:mb-4 md:mr-5">
             Sign In
           </button>
         </Link>

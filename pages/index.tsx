@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { useRecoilValue } from 'recoil'
 import Banner from '../components/Banner/Banner'
-import Header from '../components/Header/Header'
-import Row from '../components/Row/Row'
+import Navbar from '../components/Navbar/Navbar'
+import Carousel from '../components/Carousel/Carousel'
 import { modalState, movieState } from '../atoms/modalAtom'
 import { Movie } from '../types'
-import requests from '../utilities/requests'
+import requests from '../utils/requests'
 import Modal from '../components/Modal/Modal'
 
 interface Props {
@@ -18,50 +18,6 @@ interface Props {
   romanceMovies: Movie[]
   documentaries: Movie[]
 }
-
-const Home = ({
-  netflixOriginals,
-  actionMovies,
-  comedyMovies,
-  documentaries,
-  horrorMovies,
-  romanceMovies,
-  topRated,
-  trendingNow,
-}: Props) => {
-  const showModal = useRecoilValue(modalState)
-
-  return (
-    <div
-      className={`relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh] ${
-        showModal && '!h-screen overflow-hidden'
-      }`}
-    >
-      <Head>
-        <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <>
-        <Header />
-        <div className="relative pl-8 lg:space-y-0">
-          <Banner netflixOriginals={netflixOriginals} />
-          <div className="md:space-y-52">
-            <Row title="Trending" movies={trendingNow} />
-            <Row title="Romance" movies={romanceMovies} />
-            <Row title="Comedies" movies={comedyMovies} />
-            <Row title="Documentaries" movies={documentaries} />
-            <Row title="Top Rated" movies={topRated} />
-            <Row title="Action" movies={actionMovies} />
-            <Row title="Horror" movies={horrorMovies} />
-          </div>
-        </div>
-        {showModal && <Modal />}
-      </>
-    </div>
-  )
-}
-
-export default Home
 
 export const getServerSideProps = async () => {
   const [
@@ -97,3 +53,47 @@ export const getServerSideProps = async () => {
     },
   }
 }
+
+const Home = ({
+  netflixOriginals,
+  actionMovies,
+  comedyMovies,
+  documentaries,
+  horrorMovies,
+  romanceMovies,
+  topRated,
+  trendingNow,
+}: Props) => {
+  const showModal = useRecoilValue(modalState)
+
+  return (
+    <div
+      className={`relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[120vh] ${
+        showModal && '!h-screen overflow-hidden'
+      }`}
+    >
+      <Head>
+        <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <>
+        <Navbar />
+        <div className="relative pl-8 lg:space-y-0">
+          <Banner netflixOriginals={netflixOriginals} />
+          <div className="md:space-y-44">
+            <Carousel title="Trending" movies={trendingNow} />
+            <Carousel title="Romance" movies={romanceMovies} />
+            <Carousel title="Comedies" movies={comedyMovies} />
+            <Carousel title="Documentaries" movies={documentaries} />
+            <Carousel title="Top Rated" movies={topRated} />
+            <Carousel title="Action" movies={actionMovies} />
+            <Carousel title="Horror" movies={horrorMovies} />
+          </div>
+        </div>
+        {showModal && <Modal />}
+      </>
+    </div>
+  )
+}
+
+export default Home

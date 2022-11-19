@@ -5,12 +5,12 @@ import Thumbnail from './Thumbnail'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 
-interface Props {
+type Props = {
   title: string
   movies: Movie[]
 }
 
-function Row({ title, movies }: Props) {
+function Carousel({ title, movies }: Props) {
   const rowRef = useRef<HTMLDivElement>(null)
   const [isMoved, setIsMoved] = useState(false)
 
@@ -28,7 +28,7 @@ function Row({ title, movies }: Props) {
   }
 
   return (
-    <div className="h-52 space-y-0.5 md:space-y-2">
+    <div className="h-52 space-y-2">
       <h2 className="w-56 cursor-pointer text-2xl font-semibold text-[#e5e5e5] transition duration-200 text-shadow-xl hover:text-white md:text-3xl">
         {title}
       </h2>
@@ -55,4 +55,4 @@ function Row({ title, movies }: Props) {
   )
 }
 
-export default Row
+export default Carousel

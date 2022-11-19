@@ -2,13 +2,14 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { baseUrl } from '../../constants/movie'
 import { Movie } from '../../types'
-import { FaPlay } from 'react-icons/fa'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
+import MovieIcon from '@mui/icons-material/Movie'
 import InfoIcon from '@mui/icons-material/Info'
+import LibraryAddIcon from '@mui/icons-material/LibraryAdd'
 import { useRecoilState } from 'recoil'
 import { modalState, movieState } from '../../atoms/modalAtom'
 
-interface Props {
+type Props = {
   netflixOriginals: Movie[]
 }
 
@@ -33,7 +34,7 @@ function Banner({ netflixOriginals }: Props) {
         />
       </div>
 
-      <h1 className="text-4xl font-bold text-shadow-xl md:text-6xl">
+      <h1 className="max-w-3xl text-4xl font-bold text-shadow-xl md:text-6xl">
         {movie?.title || movie?.name || movie?.original_name}
       </h1>
       <p className="max-h-xl text-md flex max-w-xl flex-wrap text-shadow-xl md:max-w-2xl md:text-lg lg:max-w-3xl">
@@ -47,8 +48,8 @@ function Banner({ netflixOriginals }: Props) {
             setShowModal(true)
           }}
         >
-          <PlayArrowIcon className="text-black" />
-          Play
+          <MovieIcon className="text-black" />
+          Play Trailer
         </button>
 
         <button
@@ -58,8 +59,12 @@ function Banner({ netflixOriginals }: Props) {
             setShowModal(true)
           }}
         >
-          <InfoIcon className="h-5 w-5 md:h-8 md:w-8" />{' '}
-          <span>Watch Trailer</span>
+          <InfoIcon className="h-5 w-5 md:h-8 md:w-8" /> <span>Info</span>
+        </button>
+
+        <button className="flex items-center gap-x-2 rounded bg-[gray]/70 px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-lg">
+          <LibraryAddIcon className="h-5 w-5 md:h-8 md:w-8" />{' '}
+          {/* <span className="hidden md:flex">Add To Watchlist</span> */}
         </button>
       </div>
     </div>
