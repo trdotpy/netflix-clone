@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import { baseUrl } from '../../constants/movie'
 import { Movie } from '../../types'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
-import MovieIcon from '@mui/icons-material/Movie'
 import InfoIcon from '@mui/icons-material/Info'
 import LibraryAddIcon from '@mui/icons-material/LibraryAdd'
 import { useRecoilState } from 'recoil'
@@ -48,7 +47,7 @@ function Banner({ netflixOriginals }: Props) {
             setShowModal(true)
           }}
         >
-          <MovieIcon className="text-black" />
+          <PlayArrowIcon className="h-5 w-5 md:h-8 md:w-8" />
           Play Trailer
         </button>
 
