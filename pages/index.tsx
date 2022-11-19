@@ -67,7 +67,7 @@ const Home = ({
   const showModal = useRecoilValue(modalState)
 
   return (
-    <div
+    <main
       className={`relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[120vh] ${
         showModal && '!h-screen overflow-hidden'
       }`}
@@ -76,9 +76,10 @@ const Home = ({
         <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <>
+
+      <div>
         <Navbar />
-        <div className="relative pl-8 lg:space-y-0">
+        <section className="relative pl-8 lg:space-y-0">
           <Banner netflixOriginals={netflixOriginals} />
           <div className="md:space-y-44">
             <Carousel title="Trending" movies={trendingNow} />
@@ -89,10 +90,10 @@ const Home = ({
             <Carousel title="Action" movies={actionMovies} />
             <Carousel title="Horror" movies={horrorMovies} />
           </div>
-        </div>
+        </section>
         {showModal && <Modal />}
-      </>
-    </div>
+      </div>
+    </main>
   )
 }
 

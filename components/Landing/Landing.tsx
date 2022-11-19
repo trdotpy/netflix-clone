@@ -19,7 +19,7 @@ export default function Landing() {
           </button>
         </Link>
       </div>
-      <div className="z-30 mx-auto mt-40 w-3/4 text-center text-white md:w-[800px]">
+      <div className="z-30 mx-auto mt-40 w-3/4 text-center text-white text-shadow-lg md:w-[800px]">
         <h1 className="text-5xl font-semibold md:text-7xl">
           Unlimited movies, TV shows, and more.
         </h1>
