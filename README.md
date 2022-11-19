@@ -24,7 +24,6 @@
 
 ## Overview
 
----
 
 This is a clone of Netflix.com built in NextJS.
 
@@ -34,7 +33,6 @@ This application pulls movie data from the TheMovieDatabase (TMDB) API.
 
 ## Technology
 
----
 
 ![NextJS](https://img.shields.io/static/v1?style=for-the-badge&message=NextJS&color=black&logo=Next.js&logoColor=white&label=)
 
@@ -50,7 +48,6 @@ This application pulls movie data from the TheMovieDatabase (TMDB) API.
 
 ## Install
 
----
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
 
@@ -78,7 +75,6 @@ $ npm run dev
 
 ## Contact
 
----
 
 [<img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white'>](https://github.com/trdotpy/)
 [<img src='https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white'>](mailto:tanvi.rahman@outlook.com)
