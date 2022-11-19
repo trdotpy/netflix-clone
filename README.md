@@ -2,7 +2,6 @@
 
 ## <a href="https://netflix-clone-mauve-three.vercel.app/">Live Demo</a>
 
-<br />
 
 ## Screenshots
 

@@ -83,11 +83,11 @@ const Home = ({
           <Banner netflixOriginals={netflixOriginals} />
           <div className="md:space-y-44">
             <Carousel title="Trending" movies={trendingNow} />
+            <Carousel title="Top Rated" movies={topRated} />
+            <Carousel title="Action" movies={actionMovies} />
             <Carousel title="Romance" movies={romanceMovies} />
             <Carousel title="Comedies" movies={comedyMovies} />
             <Carousel title="Documentaries" movies={documentaries} />
-            <Carousel title="Top Rated" movies={topRated} />
-            <Carousel title="Action" movies={actionMovies} />
             <Carousel title="Horror" movies={horrorMovies} />
           </div>
         </section>

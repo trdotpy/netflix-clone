@@ -6,7 +6,7 @@ import InfoIcon from '@mui/icons-material/Info'
 import LibraryAddIcon from '@mui/icons-material/LibraryAdd'
 import { useRecoilState } from 'recoil'
 import { modalState, movieState } from '../../atoms/modalAtom'
-import MovieIcon from '@mui/icons-material/Movie';
+import MovieIcon from '@mui/icons-material/Movie'
 
 type Props = {
   netflixOriginals: Movie[]
@@ -34,7 +34,7 @@ function Banner({ netflixOriginals }: Props) {
       </div>
 
       <h1 className="max-w-3xl text-4xl font-bold text-shadow-xl md:text-6xl">
-        {movie?.title || movie?.name || movie?.original_name}
+        {movie?.title}
       </h1>
       <p className="max-h-xl text-md flex max-w-xl flex-wrap text-shadow-xl md:max-w-2xl md:text-lg lg:max-w-3xl">
         {movie?.overview}
