@@ -79,7 +79,7 @@ const Home = ({
 
       <div>
         <Navbar />
-        <section className="relative pl-8 lg:space-y-0">
+        <section className="relative pl-8">
           <Banner netflixOriginals={netflixOriginals} />
           <div className="md:space-y-44">
             <Carousel title="Trending" movies={trendingNow} />

@@ -25,7 +25,7 @@ function Banner({ netflixOriginals }: Props) {
   }, [netflixOriginals])
 
   return (
-    <div className="flex flex-col space-y-4 py-28  lg:h-[65vh] lg:justify-end lg:pb-28">
+    <div className="flex flex-col space-y-4 py-28 lg:h-[65vh] lg:justify-end lg:pb-28">
       <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
         <Image
           layout="fill"
