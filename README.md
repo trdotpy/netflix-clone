@@ -1,12 +1,26 @@
 # Netflix Clone
 
-## <a href="https://netflix-clone-mauve-three.vercel.app/">Demo Link</a>
+## <a href="https://netflix-clone-mauve-three.vercel.app/">Live Demo</a>
+
+<br />
 
 ## Screenshots
 
----
+### Landing Page
 
-<img src="./public/netflix-clone-ss.png">
+<img src="./public/desktop-landing.png">
+
+### Dashboard
+
+<img src="./public/desktop-dashboard.png">
+
+### Sign In
+
+<img src="./public/desktop-login.png">
+
+### Mobile Sign In
+
+<img src="./public/mobile-login.png">
 
 ## Overview
 

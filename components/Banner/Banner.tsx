@@ -2,11 +2,11 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { baseUrl } from '../../constants/movie'
 import { Movie } from '../../types'
-import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import InfoIcon from '@mui/icons-material/Info'
 import LibraryAddIcon from '@mui/icons-material/LibraryAdd'
 import { useRecoilState } from 'recoil'
 import { modalState, movieState } from '../../atoms/modalAtom'
+import MovieIcon from '@mui/icons-material/Movie';
 
 type Props = {
   netflixOriginals: Movie[]
@@ -47,7 +47,7 @@ function Banner({ netflixOriginals }: Props) {
             setShowModal(true)
           }}
         >
-          <PlayArrowIcon className="h-5 w-5 md:h-8 md:w-8" />
+          <MovieIcon className="h-5 w-5 md:h-8 md:w-8" />
           Play Trailer
         </button>
 
