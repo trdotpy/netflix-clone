@@ -8,7 +8,6 @@ import ListIcon from '@mui/icons-material/List'
 import SearchIcon from '@mui/icons-material/Search'
 import Link from 'next/link'
 
-
 export default function Navbar() {
   return (
     <header className="bg-transparent">
@@ -23,25 +22,25 @@ export default function Navbar() {
       </div>
 
       <nav>
-        <ul className="hidden md:space-x-12 md:flex">
+        <ul className="hidden md:flex md:space-x-12">
           <Link href="/">
-            <li className="text-md cursor-pointer text-[#e5e5e5] transition duration-200  text-shadow-lg hover:brightness-125">
+            <li className="cursor-pointer text-lg text-[#e5e5e5] transition duration-200 text-shadow-lg hover:brightness-125">
               <p>Home</p>
+            </li>
+          </Link>
+          <Link href="/">
+            <li className="cursor-pointer text-lg text-[#e5e5e5] transition duration-200 text-shadow-lg hover:brightness-125">
+              <p>Movies & Film</p>
+            </li>
+          </Link>
+          <Link href="/">
+            <li className="cursor-pointer text-lg text-[#e5e5e5] transition duration-200 text-shadow-lg hover:brightness-125">
+              <p>TV Shows</p>
             </li>
           </Link>
 
           <Link href="/">
-            <li className="text-md cursor-pointer text-[#e5e5e5] transition duration-200 text-shadow-lg hover:brightness-125">
-              <p>TV Shows</p>
-            </li>
-          </Link>
-          <Link href="/">
-            <li className="text-md cursor-pointer text-[#e5e5e5] transition duration-200 text-shadow-lg hover:brightness-125">
-              <p>TV Shows</p>
-            </li>
-          </Link>
-          <Link href="/">
-            <li className="text-md cursor-pointer text-[#e5e5e5] transition duration-200 text-shadow-lg hover:brightness-125">
+            <li className="cursor-pointer text-lg text-[#e5e5e5] transition duration-200 text-shadow-lg hover:brightness-125">
               <p>New & Popular</p>
             </li>
           </Link>
