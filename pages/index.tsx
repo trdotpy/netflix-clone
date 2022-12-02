@@ -6,7 +6,7 @@ import Carousel from '../components/Carousel/Carousel'
 import { modalState, movieState } from '../atoms/modalAtom'
 import { Movie } from '../types'
 import requests from '../utils/requests'
-import Modal from '../components/Modal/Modal'
+import Modal from '../components/Modal/VideoModal'
 
 interface Props {
   netflixOriginals: Movie[]

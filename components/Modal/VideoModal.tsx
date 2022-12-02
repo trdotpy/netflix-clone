@@ -5,12 +5,11 @@ import { modalState, movieState } from '../../atoms/modalAtom'
 import { Element, Genre, Movie } from '../../types'
 import ReactPlayer from 'react-player/lazy'
 
-function Modal() {
+function VideoModal() {
   const [showModal, setShowModal] = useRecoilState(modalState)
   const [movie, setMovie] = useRecoilState(movieState)
   const [trailer, setTrailer] = useState('')
   const [genres, setGenres] = useState<Genre[]>([])
-  // const [movies, setMovies] = useState<Movie[]>([])
 
   useEffect(() => {
     if (!movie) return
@@ -61,39 +60,9 @@ function Modal() {
             <div className="flex space-x-2"></div>
           </div>
         </div>
-
-        {/* <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8">
-          <div className="space-y-3 text-lg">
-            <div className="flex items-center space-x-2 text-sm">
-              <p className="text-lg font-semibold text-green-400">
-                {movie!.vote_average * 10}% Match
-              </p>
-              <p className="text-md font-light">
-                {movie?.release_date || movie?.first_air_date}
-              </p>
-              <div className="flex h-4 items-center justify-center rounded border border-white/40 px-1.5 text-xs">
-                HD
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-x-10 gap-y-4 text-sm font-light md:flex-row">
-              <p className="w-5/6">{movie?.overview}</p>
-              <div className="flex flex-col space-y-3 text-sm">
-                <div>
-                  <span className="text-[gray]">Genres:</span>{' '}
-                  {genres && genres?.map((genre) => genre.name).join(', ')}
-                </div>
-                <div>
-                  <span className="text-[gray]">Original language:</span>{' '}
-                  {movie?.original_language}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </>
     </MuiModal>
   )
 }
 
-export default Modal
+export default VideoModal
